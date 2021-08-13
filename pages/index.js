@@ -1,10 +1,12 @@
 import Link from 'next/Link'
 
 function Home() {
-    return 
+    return ( <div>é isso ai
         <Link href="/lar">
-        <a>testando</a></Link>
-    
+        <a>testando</a>
+        </Link>
+        </div>
+        )
 }
 
 export default Home
