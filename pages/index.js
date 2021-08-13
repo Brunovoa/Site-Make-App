@@ -1,7 +1,10 @@
+function lwe() {
+    teste = <a src="lar.html">ir para o lar</a>
+}
+
 function Home() {
-    return <div>
-        <h1>Pagina inicial</h1>
-    </div>
+    s = lwe()
+    return s
 }
 
 export default Home
