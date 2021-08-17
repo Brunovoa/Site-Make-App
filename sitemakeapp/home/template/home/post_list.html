@@ -3,12 +3,12 @@
 {% block title %}makeapp{% endblock %}
 
 {% block content %}
-{% for post in post_list %}
-<article>
-    <h2> {{post.title}}</h2>
-    <p class="date">
-        publicado em {{post.created}} por: {{post.author}}
-    </p>
-    {{post.body|linebreaks|truncadewords:10}}
-</article>
+    {% for post in post_list %}
+        <article>
+            <h2> {{ post.title }}</h2>
+            <p class="date">
+            publicado em {{ post.created }} por: {{ post.author }}
+            </p>
+            {{ post.body|linebreaks|truncadewords:10 }}
+        </article>
 {% endblock %}
